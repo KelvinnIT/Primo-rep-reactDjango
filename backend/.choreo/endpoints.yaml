@@ -1,4 +1,13 @@
-schemaVersion: "1.2"
+version: 0.1
+
+endpoints:
+    - name: "REST API"
+      port: 8000
+      type: REST
+      networkVisibility: Public
+      context: /
+
+      schemaVersion: "1.2"
 endpoints:
     - name: rest-api-be2
       displayName: REST API
@@ -9,6 +18,4 @@ endpoints:
       networkVisibilities:
         - Project
         - Public
-
-
-      
+      context: /  
